@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title" >Survey Form</h1>
+      <p id="description" >Please take a few moments to complete this survey.</p>
+  </body>
+  <form id="survey-form">
+    <fieldset><label id="name-label" >Enter Your Full Name: <input id="name" type="text"  class="name" placeholder="Jonathan Michael Smith"  required/></label>
+    <label id="email-label" >Enter Your Email: <input id="email" type="email" class="email" placeholder="jmsmith@gmail.com" required /></label>
+    <label id="number-label" >Enter Your Phone Number: <input id="number" type="number" class="number" min="10" max="10"  placeholder="0725345490" required/></label></fieldset>
+    <fieldset><legend>How did you hear about us?</legend>
+    <label><select id="dropdown" >
+      <option value="">(select one)</option>
+      <option value="1">Job Website</option>
+      <option value="2">Social Media</option>
+      <option value="3">Family/Friend</option>
+      <option value="4">LinkedIn</option>
+    </select>
+    </label>
+    <legend>Did our product or service meet your expectations?</legend>
+    <label for="yes"><input id="yes" type="radio" name="response" class="inline" value="yes"/>YES</label>
+    <label for="no"><input id="no" type="radio" name="response" class="inline" value="no" />NO</label></fieldset>
+    <fieldset>
+      <legend>Which product or service do you like most?</legend>
+      <label for="ziplining"><input id="ziplining" type="checkbox" value="first-game" />Ziplining</label>
+      <label for="paint-shooting"><input id="paint-shooting" type="checkbox" value="second-game" />Paint Shooting</label>
+      <label for="snorkeling"><input id="snorkeling" type="checkbox" value="third-game" />Snorkeling</label>
+      <label for="tag-of-war"><input id="tag-of-war" type="checkbox" value="forth-game" />Tag of war</label>
+    </fieldset>
+    <fieldset>
+    <label for="bio">What (Product/Service)would you like to be improved on?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="e.g I would like (product/sevice)to have..."></textarea>
+        </label></fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</html>
